@@ -29,3 +29,5 @@ console.log(sendJSON);
 
 const receiveJSON = JSON.parse(sendJSON);
 console.log(receiveJSON);
+// 
+const sendJSON1 = sendJSON1.appendChild(myObj);
