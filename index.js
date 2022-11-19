@@ -44,14 +44,3 @@ const person = {
 
 console.log(person);
 
-(function(){
-    
-    /* Start of your code */
-    function greetMe(Lucas) {
-      alert(`Hello ${Cheps}`);
-    }
-  
-    greetMe('World');
-    /* End of your code */
-  })();
-  

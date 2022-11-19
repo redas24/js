@@ -19,7 +19,7 @@
   "editor.tabSize": 2,
   "gitlens.historyExplorer.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
