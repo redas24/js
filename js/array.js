@@ -1,4 +1,3 @@
-console.log("Welcome to JS")
 const myArray = [];
 
 myArray[0] = "Lucas";
@@ -16,7 +15,7 @@ console.log(myArray.length);
 console.log(myArray[myArray.length - 1])
 
 
-// Slice method with arrays
+// Slice method with arrays 
 const myArray1 = ["A","B","C","D","E","F"]
 
 const newString = myArray1.join();
@@ -32,26 +31,3 @@ const myArrayB = ["D","E","F"];
 const newArray = myArrayA.concat(myArrayB)
 
 console.log(newArray);
-let mutt = newArray2;
-
-const person = {
-    name: ["Lucas","Cheps"],
-    age: 39,
-    bio: function() {
-        console.log('${this.name[0]} ${this.name[1]}');
-    }
-}
-
-console.log(person);
-
-(function(){
-    
-    /* Start of your code */
-    function greetMe(Lucas) {
-      alert(`Hello ${Cheps}`);
-    }
-  
-    greetMe('World');
-    /* End of your code */
-  })();
-  

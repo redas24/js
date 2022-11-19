@@ -1,0 +1,20 @@
+// Math Methods and Properties
+console.log(Math.PI)
+console.log(Math.trunc(Math.PI))
+console.log(Math.round(3.5))
+console.log(Math.ceil(Math.PI))
+console.log(Math.pow(5, 2))
+console.log(Math.max(0, 2, 23.1))
+console.log(Math.random())
+console.log(Math.random())
+console.log(Math.random() * 2)
+console.log(Math.random() / 10)
+console.log(Math.random() + 3)
+console.log(Math.floor(Math.random() * 10) + 1)
+console.log(Math.floor(Math.random() * 10) + 1)
+console.log(Math.floor(Math.random() * 10) + 1)
+console.log(Math.floor(Math.random() * 10) + 1)
+console.log(Math.floor(Math.random() * 10) + 1)
+console.log(Math.floor(Math.random() * 10) + 1)
+
+// Choose Math.floor() "NOT" Math.ceil() to generating random number from 1 to 10
