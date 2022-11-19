@@ -1,33 +1,36 @@
-"use strict";
+console.log("Welcome to JS")
+const myArray = [];
 
-let canvas = document.createElement('canvas');
-canvas.width = 500;
-canvas.height = 250;
+myArray[0] = "Lucas";
+myArray[1] = 1001;
+myArray[2] = false;
+
+myArray.push('college')
+
+const newLength = myArray.unshift(44);
+
+myArray.splice(1, 1, 42);
+myArray.pop = myArray;
+console.log(myArray);
+console.log(myArray.length);
+console.log(myArray[myArray.length - 1])
 
 
-let ctx = canvas.getContext('2d');
-ctx.font = '70px Time New Romance';
-ctx.fillText ("JavaScript learning path", 50, 50);
-document.body.appendChild(canvas);
+// Slice method with arrays
+const myArray1 = ["A","B","C","D","E","F"]
 
-//JSON: JavaScript Object Notation
+const newString = myArray1.join();
+myArray1.reverse();
 
-const myObj = { 
-    name: "Lucas",
-    hobbies: ["coding","hacking","music"],
-    hello: function() {
-        console.log("Hello!");
-    }
-}
-console.log(myObj);
-console.log(myObj.name);
-myObj.hello();
-console.log(typeof myObj);
+const newArray2 = myArray1.slice(2);
 
-const sendJSON = JSON.stringify(myObj);
-console.log(sendJSON);
+console.log(newArray2);
 
-const receiveJSON = JSON.parse(sendJSON);
-console.log(receiveJSON);
-// 
-const sendJSON1 = sendJSON1.appendChild(myObj);
+const myArrayA = ["A","B","C"]
+const myArrayB = ["D","E","F"];
+
+const newArray = myArrayA.concat(myArrayB)
+
+console.log(newArray);
+let mutt = newArray2;
+
