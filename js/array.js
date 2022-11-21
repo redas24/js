@@ -15,7 +15,7 @@ console.log(myArray.length);
 console.log(myArray[myArray.length - 1])
 
 
-// Slice method with arrays 
+// Slice method with arrays
 const myArray1 = ["A","B","C","D","E","F"]
 
 const newString = myArray1.join();
