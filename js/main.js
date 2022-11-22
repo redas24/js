@@ -21,3 +21,17 @@ let array2 = new Array();
 array[0];
 console.log(array);
 array.push(array);
+// maths = assignment operators
+
+let postfix = 5;
+let prefix = 5;
+console.log(postfix);
+console.log(++prefix);
+console.log(prefix);
+console.log(postfix++);
+console.log(++postfix);
+// Assignment operators
+
+let additionAssignment = 1;
+additionAssignment += 2;
+console.log(additionAssignment);

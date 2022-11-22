@@ -50,17 +50,3 @@ document.getElementById("button").onclick = function() {
     document.getElementById("button").style.display = "none";
 }
 
-// maths = assignment operators
-
-let postfix = 5;
-let prefix = 5;
-console.log(postfix);
-console.log(++prefix);
-console.log(prefix);
-console.log(postfix++);
-console.log(++postfix);
-// Assignment operators
-
-let additionAssignment = 1;
-additionAssignment += 2;
-console.log(additionAssignment);
