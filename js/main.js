@@ -1,4 +1,4 @@
-'use strict';
+
 
 let foo = 42; // can reassign can build block scope
 foo = 78;
@@ -16,6 +16,6 @@ let string = "hey";
 console.log(string);
 
 
-let array4 = [5,'car', true];
+let array = [5,'car', true];
 let array2 = new Array();
-array4[0];
+array[0];
