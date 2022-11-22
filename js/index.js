@@ -57,6 +57,8 @@ let prefix = 5;
 console.log(postfix);
 console.log(++prefix);
 console.log(prefix);
+console.log(postfix++);
+console.log(++postfix);
 // Assignment operators
 
 let additionAssignment = 1;
