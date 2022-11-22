@@ -35,3 +35,6 @@ console.log(++postfix);
 let additionAssignment = 1;
 additionAssignment += 2;
 console.log(additionAssignment);
+
+let subtractionAssignment =1;
+subtractionAssignment -= 2;
