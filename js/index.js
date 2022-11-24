@@ -105,3 +105,5 @@ let test = {
 console.log(test.x);
 console.log(true&&true);
 console.log(true || true);
+let obj = { x:'x', y:'y', z:'z'};
+console.log(obj);
