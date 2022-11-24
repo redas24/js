@@ -107,3 +107,11 @@ console.log(true&&true);
 console.log(true || true);
 let obj = { x:'x', y:'y', z:'z'};
 console.log(obj);
+// Exponentiation operator
+// Logical assignment operators
+
+(function(nuk){
+
+    const num = 2**4
+})();
+console.log(nuk);
