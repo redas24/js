@@ -169,3 +169,4 @@ myVariable != myvariable;
 let obj1;
 obj.test // type error
 obj1?.test //undefined
+console.log(obj);
