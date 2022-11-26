@@ -98,7 +98,7 @@ subtractionAssignment -= 2;
 // Advanced operators part2
 // Unary operators - operators with only single operand
 let test = {
-  x: 'x'
+x: 'x'
 
 };
 
