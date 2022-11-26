@@ -156,12 +156,12 @@ myVariable != myvariable;
 */
 // Nullish Coalescing & Optional Chaining
 /* The nullish coalescing logical operators ?? */
-(function1() {
+/*(function1() {
 
 
     const x = null;
     const y = x || 10; // y =10
-})();
+})();*/
 
 
 /* ?. - The optional chaining operator is conceptually similar to the nullish coalescing operator */
