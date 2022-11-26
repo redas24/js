@@ -162,3 +162,10 @@ myVariable != myvariable;
     const x = null;
     const y = x || 10; // y =10
 })();
+
+
+/* ?. - The optional chaining operator is conceptually similar to the nullish coalescing operator */
+
+let obj1;
+obj.test // type error
+obj1?.test //undefined
