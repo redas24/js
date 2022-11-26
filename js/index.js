@@ -110,12 +110,21 @@ console.log(obj);
 // Exponentiation operator
 // Logical assignment operators
 
-(function(nuk){
+(function(){
 
     const num = 2**4
 })();
-console.log(nuk);
+console.log();
 //
 let a = null;
 let b = 1;
 console.log(a ??= b);
+// Operator Precedence
+// Operator associativity(left-to-right, or right-to-left)
+// parenthesis () -grouping operator have the presence in the other higher operators.
+let precedence = 1 + 4 *2;
+let precedence2 = (1 + 4)*2;
+let precedence3 =
+console.log(precedence);
+console.log(precedence2);
+// Reserved words
