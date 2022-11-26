@@ -5,8 +5,8 @@
 
 (function () {
 
-  function function1() {
-    console.log('function1 invoked');
+  function function1(msg) {
+    console.log(msg);
   }
-  function1();
+  function1('new message!');
 })();
