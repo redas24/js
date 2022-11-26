@@ -154,3 +154,11 @@ myVariable != myvariable;
     - Use them where they make sense for you
     - No consecutive separators
 */
+// Nullish Coalescing & Optional Chaining
+/* The nullish coalescing logical operators ?? */
+(function1() {
+
+
+    const x = null;
+    const y = x || 10; // y =10
+})();
