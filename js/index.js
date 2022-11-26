@@ -128,3 +128,17 @@ let precedence3 =
 console.log(precedence);
 console.log(precedence2);
 // Reserved words
+/* An identifier - the name given to:
+- a variable
+- an object property
+- a function
+- a class
+Identifier name rules:
+- Must start with a letter, an underscore, or $
+- Numbers can be used within the identifier name
+*/
+let myThing1; //good
+//let 1Thing; //bad
+let myVariable, myvariable;
+myVariable != myvariable;
+
