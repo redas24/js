@@ -115,3 +115,7 @@ console.log(obj);
     const num = 2**4
 })();
 console.log(nuk);
+//
+let a = null;
+let b = 1;
+console.log(a ??= b);
