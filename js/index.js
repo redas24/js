@@ -142,3 +142,15 @@ let myThing1; //good
 let myVariable, myvariable;
 myVariable != myvariable;
 
+// Numeric Separators
+/* Syntactic sugar for working with very large integers */
+(function () {
+    const largeNumber = 1000000000;
+    const largeNumber2 = 1_000_000_000;
+})();
+/* Summary
+    - Use separators to make large numbers more readable
+    - Dont affect calculation/operations
+    - Use them where they make sense for you
+    - No consecutive separators
+*/
