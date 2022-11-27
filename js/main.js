@@ -73,3 +73,28 @@ let myMap = new Map;
 let myMap2 = new Map ([['a', 'b'],[1, 2]]);
 myMap2.set('c', 3);
 console.log(myMap2);
+
+// WeakSet and WeakMap
+/* Reference to objects are held weakly
+The garbage collector will be able to dispose of them when no longer in use
+ */
+
+let myWeakSet = new WeakSet();
+let someObj = {};
+myWeakSet.add(someObj);
+console.log(myWeakSet.has(someObj));
+
+myWeakSet.delete(someObj);
+console.log(myWeakSet.has(someObj));
+
+
+//The key in WeakMap must be object
+
+let myWeakMap = new WeakMap();
+/* Summary
+  WeakSet andWeakMap:
+    - Similar to Set and Map
+    - Except reference to values are held weakly - do not prevent garbage collector
+    - Both have very small APIs
+    - Cannot be iterated
+  */
