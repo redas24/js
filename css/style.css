@@ -6,7 +6,7 @@ h1 {
 }
 
 .container {
-  width: 100%;
+  width: 50%;
   height: auto;
   margin: 0;
   padding: 1em;
@@ -17,7 +17,7 @@ h1 {
 
 }
 .nav {
-  width: 100%;
+  width: 50%;
   height: auto;
   background-color: cornsilk;
   border-radius: 5px;
@@ -26,11 +26,17 @@ h1 {
 
 }
 .list {
-  width: 100%;
+  width: 50%;
   height: auto;
   margin-top: 1em;
   padding: 2em;
   border-radius: 5px;
   border-style: solid
 
+}
+
+.box {
+  width: 50%;
+  height: auto;
+  border-style: solid;
 }
