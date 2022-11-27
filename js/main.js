@@ -3,10 +3,27 @@
   - A function can be invoked at any time to execute the expressions it contains.
   */
 
-(function () {
+  (function(){
+    'use strict';
+    function function1(msg, msg2) {
+      console.log(msg);
+    }
+    function1('new message!');
+    function1('another message!')
 
-  function function1(msg) {
-    console.log(msg);
-  }
-  function1('new message!');
-})();
+    function logArgs() {
+      console.log(arguments);
+
+      return 'some value';
+    }
+    logArgs('car','boat', 'arguments');
+
+    let f = function f() {}
+    f();
+
+    function log(){
+      console.log(test);
+      var test = 'test';
+    }
+    log();
+  }());
