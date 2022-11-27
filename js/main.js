@@ -53,7 +53,33 @@ console.log(newCar);
 
 try {
     // something that may result in an error
-    doeesntExist();
+
 } catch (error) {
   console.log('an error occurred:', error);
 }
+// Switch statements
+/* Switch:
+- Can perform faster than an equivalent if statement
+- Some find it more readable
+- if is used with Boolean conditions
+- Switch can be used with other types
+  */
+
+let switcher = 'five';
+
+switch (switcher) {
+  case 'one':
+    console.log('the value was one');
+    break;
+  case 'two':
+    console.log('the value was two');
+    break;
+    case 'three':
+      console.log('the value was three');
+      break;
+      default:
+        console.log('nothing else matched');
+}
+/* Summary Switch:
+- Similar to if else
+- Can switch on any value, not just Boolean */
