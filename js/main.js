@@ -37,4 +37,8 @@ console.log(myArray);
   };
   return things[color] || 'Sorry no thing of that color exists!';
   }
+  console.log(getThingByColor('yellow'));
+  console.log(getThingByColor('purple'));
+
+  console.log(obj)
 }());
