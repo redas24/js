@@ -42,3 +42,23 @@ console.log(myArray);
 
   console.log(obj)
 }());
+
+// Sets
+/*Set:
+  -Data structure to store unique values
+  - Get number of items using size property
+  - Use add to add new items
+   - Use delete to remove items
+   - Use has to see if set contains an item
+    -Similar to arrays
+    */
+let mySet = new Set();
+let anArray = [1, 1, 1, 2, 2, 3];
+let mySet2 = new Set(anArray);
+console.log(mySet2);
+console.log(mySet2.size);
+mySet2.add(5);
+console.log(mySet2);
+console.log(mySet2.has(2));
+
+// Map Objects
