@@ -88,11 +88,29 @@ switch (switcher) {
 /* JavaScript has several loops:
 - while / do while
 - for / for in / for of
+- loop constructor: for(expression1; expression2; expression3;) {}
+- regular loop is used for iterate values in array.
 */
-// loop constructor: for(expression1; expression2; expression3;) {}
 
 let anArray1 = ['one','two', 'three'];
 
 for (const element of anArray1) {
   console.log(element);
+}
+
+/* For in loop
+- Useful for iterating over the properties of an object
+- for(singleExpression) {}
+- Iterate enumerable properties in an object
+- Use hasOwnProperty to only iterate own properties*/
+
+let obj = {
+  key1: 'value1',
+  key2: 'value2',
+  key3: 'value3',
+};
+
+for (let prop in obj) {
+  if (obj.hasOwnProperty(prop))
+  console.log('key is:',prop, 'value is:', obj[prop]);
 }
