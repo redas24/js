@@ -61,4 +61,15 @@ mySet2.add(5);
 console.log(mySet2);
 console.log(mySet2.has(2));
 
-// Map Objects
+// Maps Objects
+// maps similar to object
+/* Map:
+  - Similar API to Set
+  - Store key-value pairs
+  - Use set method to add new items
+  - Use get method to retrieve items
+*/
+let myMap = new Map;
+let myMap2 = new Map ([['a', 'b'],[1, 2]]);
+myMap2.set('c', 3);
+console.log(myMap2);
