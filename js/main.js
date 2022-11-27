@@ -83,3 +83,16 @@ switch (switcher) {
 /* Summary Switch:
 - Similar to if else
 - Can switch on any value, not just Boolean */
+
+// The for Loop
+/* JavaScript has several loops:
+- while / do while
+- for / for in / for of
+*/
+// loop constructor: for(expression1; expression2; expression3;) {}
+
+let anArray1 = ['one','two', 'three'];
+
+for (const element of anArray1) {
+  console.log(element);
+}
