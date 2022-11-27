@@ -41,3 +41,19 @@ let newCar = {
   seatbelt: 5,
 };
 console.log(newCar);
+// Ternary operator take 3 operands
+(true) ? console.log('truthy') : console.log('falsy');
+
+/* Try Catch
+- Used to handle code that could potentially throw errors
+- Not syntax errors or typos - operations that may genuinely fail
+- Errors stop program execution
+- Try catch may allow us to recover from the error
+ */
+
+try {
+    // something that may result in an error
+    doeesntExist();
+} catch (error) {
+  console.log('an error occurred:', error);
+}
