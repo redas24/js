@@ -8,3 +8,8 @@
 
 let testRing = 'This is a test ring';
 console.log(testRing.length);
+
+let ringArr = testRing.split(' ');
+console.log(ringArr);
+console.log(testRing.indexOf('is'));
+
