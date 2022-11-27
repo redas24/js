@@ -30,3 +30,14 @@ let arr =['yes'];
 if (arr.length) {
   console.log('array has length');
 }
+
+let newArray = ['car','super-car','limousine'];
+console.log(newArray);
+
+let newCar = {
+  engine: '500horsepowers',
+  doors: 5,
+  wheels: 4,
+  seatbelt: 5,
+};
+console.log(newCar);
