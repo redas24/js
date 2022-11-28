@@ -26,3 +26,20 @@ console.log('  test   '.trim());
 - Use subStr or slice to select parts of a string
 - Use trim to remove white-space characters
 */
+const number = [2,6,3,7,8,4,0,9];
+number.sort();
+console.log(number);
+const array1 = [1, 2, 3];
+console.log(array1.includes(2));
+
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+console.log(result);
+
+
+const array2 = [5, 12, 8, 130, 44];
+const found = array2.find(element => element > 10);
+console.log(found);
+
