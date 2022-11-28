@@ -48,5 +48,39 @@ console.log('------test------'.trimStart());
 console.log('------test------'.trimEnd());
 console.log('test'.padStart(7));
 console.log('test'.padStart(7, '$'));
+// Template Literals
+let template = 'this is template literal'
+let a = '5' , b ='something';
+console.log('a is ${a} while b is ${b} else');
 
+function reverse(string) {
+  return string.split('').reverse().join('');
+}
 
+function buildStr(strings, ...value) {
+  return strings[3] + value[2] +strings[2] +value[1] + strings[1] + value[0] +strings[0];
+
+}
+console.log(buildStr);
+
+/*Summary
+Template Literals
+- Use backticks to define
+- Just like strings but with extra powers
+- Multiline
+- Token substitution
+- Tag with a function fo full substitution control
+*/
+// Working with numbers
+//  Numbers are primitives
+/*Numbers have properties related to special values in JavaScript
+- MAX_VALUE
+- MIN_VALUE
+- MAX_SAFE_INTEGER
+- MIN_SAFE_INTEGER
+ */
+ console.log(Number.isNaN(5 +'oops'));
+let floatString = '1.5';
+let intString = '3';
+console.log(typeof Number.parseFloat(floatString));
+console.log(typeof Number.parseInt(intString));
