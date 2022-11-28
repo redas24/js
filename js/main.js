@@ -107,3 +107,5 @@ const veryLargeNumber3 = 9007199254740992n;
 JSON.stringify(BigInt(1));
 BigInt.prototype.toJSON = function() {return this.toString()}
 JSON.stringify(BigInt(1));
+
+// Working with Arrays
