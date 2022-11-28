@@ -84,3 +84,17 @@ let floatString = '1.5';
 let intString = '3';
 console.log(typeof Number.parseFloat(floatString));
 console.log(typeof Number.parseInt(intString));
+let num = 4.6789432;
+console.log(num.toFixed(2));
+console.log(num.toExponential(2));
+console.log(num.toLocaleString(2));
+console.log(num.toPrecision(2));
+console.log(num.toString(2))
+// Working with BIGInt
+// JAvaScript has a maximum safe value for integers 2*53-1
+
+
+
+  Number.MAX_SAFE_INTEGER + 1 === Number.MIN_SAFE_INTEGER + 2
+
+// BiGInt
