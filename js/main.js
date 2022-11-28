@@ -98,3 +98,12 @@ console.log(num.toString(2))
   Number.MAX_SAFE_INTEGER + 1 === Number.MIN_SAFE_INTEGER + 2
 
 // BiGInt
+const veryLargeNumber = BigInt(9007199254740992);
+const veryLargeNumber2 = BigInt('9007199254740992');
+const veryLargeNumber3 = 9007199254740992n;
+// BigInt(Number.MAX_SAFE_INTEGER) + 1;
+
+
+JSON.stringify(BigInt(1));
+BigInt.prototype.toJSON = function() {return this.toString()}
+JSON.stringify(BigInt(1));
