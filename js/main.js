@@ -43,3 +43,10 @@ const array2 = [5, 12, 8, 130, 44];
 const found = array2.find(element => element > 10);
 console.log(found);
 
+// Working with strings part2
+console.log('------test------'.trimStart());
+console.log('------test------'.trimEnd());
+console.log('test'.padStart(7));
+console.log('test'.padStart(7, '$'));
+
+
