@@ -101,7 +101,7 @@ console.log(num.toString(2))
 const veryLargeNumber = BigInt(9007199254740992);
 const veryLargeNumber2 = BigInt('9007199254740992');
 const veryLargeNumber3 = 9007199254740992n;
-// BigInt(Number.MAX_SAFE_INTEGER) + 1;
+BigInt(Number.MAX_SAFE_INTEGER) + 1;
 
 
 
@@ -111,4 +111,5 @@ const veryLargeNumber3 = 9007199254740992n;
 
 let arr = ['one', 'two', 'three'];
 arr.length;
-console.log(arr.slice(1));
+console.log(arr.slice());
+
