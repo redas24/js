@@ -104,8 +104,11 @@ const veryLargeNumber3 = 9007199254740992n;
 // BigInt(Number.MAX_SAFE_INTEGER) + 1;
 
 
-JSON.stringify(BigInt(1));
-BigInt.prototype.toJSON = function() {return this.toString()}
-JSON.stringify(BigInt(1));
+
+
 
 // Working with Arrays
+
+let arr = ['one', 'two', 'three'];
+arr.length;
+console.log(arr.length);
