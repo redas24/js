@@ -111,4 +111,4 @@ const veryLargeNumber3 = 9007199254740992n;
 
 let arr = ['one', 'two', 'three'];
 arr.length;
-console.log(arr.length);
+console.log(arr.slice(1));
