@@ -434,8 +434,8 @@ for (let prop in obj) {
 */
 
 
-let mySet = new Set(['a', 'b', 'c']);
-let setEntries = mySet.entries();
+let mySet1 = new Set(['a', 'b', 'c']);
+let setEntries = mySet1.entries();
 console.log(setEntries.next());
 console.log(setEntries.next());
 console.log(setEntries.next());
