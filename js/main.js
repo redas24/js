@@ -97,7 +97,7 @@ console.log(num.toString(2))
 
   Number.MAX_SAFE_INTEGER + 1 === Number.MIN_SAFE_INTEGER + 2
 
-// BiGInt
+
 
 
 
