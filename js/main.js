@@ -207,6 +207,8 @@ console.log(fruits.includes("Apples", 1));
 
 const multiArray = ["Apples", "Oranges", ["Raspberries", "Blueberries"]];
 console.log(multiArray.flat());
+multiArray.concat(multiArray.join("bananas"));
+console.log(multiArray);
 
 const multiArray2 = ["Apples", "Oranges", ["Lemons", "Limes"]];
 console.log(multiArray2.flat(2));
