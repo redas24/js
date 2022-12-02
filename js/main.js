@@ -33,11 +33,12 @@ console.log(myObj.toString())
 
 console.log(Object.prototype.toString.call([])) // create array inside object
 // Summary
-/*Objects instances
-- constructor property
-- hasOwnProperty method
-- propertyIsEnumerable method
-- toString method
-  */
-
-// Getters and Setters
+/*Arrays
+- length shows how many elements in the array
+- Remove from end or start of array with pop, shift
+- Add to end or start of array with push, unshift
+- Use splice to add and remove from inside array
+- Reverse or sort with reverse, sort
+- join converts array to a string
+- Use indexOf or lastIndexOf to find an item`s index
+- Use slice to get subset of an array  */
