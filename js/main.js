@@ -192,3 +192,5 @@ Iterating arrays
 - map - map an array into another array
  */
 // Working with arrays part 3
+// includes() - does the array contain the value?
+const fruits = ['Apples','Oranges','Bananas'];
