@@ -152,3 +152,43 @@ arr.slice('-2')
 - join converts array to a string
 - Use indexOf or lastIndexOf to find an item`s index
 - Use slice to get subset of an array  */
+
+// Working with arrays part 2
+// Arrays contain numerous methods to iterate their elements in different ways.
+let array = ['x', 'y','z'];
+array.forEach(function(currentItem) {
+  console.log(currentItem);
+});
+array.some(function(currentItem){
+  console.log('Iterating...');
+  return currentItem === 'y';
+});
+array.every(function(currentItem){
+  console.log('Also Iterating...');
+  return currentItem !== 'x';
+});
+let arr1 = [1, 2, 3, 4, 5];
+let sum = arr1.reduce(function(previous, current){
+  return previous + current;
+}, 0);
+console.log(sum);
+let refs = {
+  a: 'alpha',
+  b: 'beta',
+  g: 'gamma'
+};
+let arr2 = ['a','b','g'];
+let result2 = arr2.map(function(currentItem){
+  return refs[currentItem];
+});
+console.log(result2);
+// Summary
+/*
+Iterating arrays
+- forEach -visit each array item
+- some - iterate until callback returns true
+- every - iterate until callback returns false
+- reduce - reduce array to a single value
+- map - map an array into another array
+ */
+// Working with arrays part 3
