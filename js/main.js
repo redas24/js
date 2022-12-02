@@ -108,4 +108,47 @@ console.log(num.toString(2))
 let arr = ['one', 'two', 'three'];
 arr.length;
 console.log(arr.slice());
+arr.push('four');
+console.log(arr);
 
+
+arr.unshift('zero');
+console.log(arr);
+arr.pop();
+arr.shift();
+arr.splice(0, 1);
+console.log(arr);
+arr.reverse('a','b','c');
+arr.sort();
+console.log(arr);
+console.log(['a','b','C'].sort(function(a, b) {
+  let caselessA = a.toLowerCase(),
+  caselessB = b.toLowerCase();
+  if (caselessA < caselessB) {
+    return -1;
+  } else if (caselessA === caselessB) {
+    return 0;
+  } else {
+    return 1;
+  }
+}));
+console.log([3, 10000, 20].sort(function(a, b) {
+  return a - b;
+}));
+
+arr.join('x');
+console.log(arr);
+arr.indexOf('b')
+arr.lastIndexOf('a');
+arr.slice(1);
+arr.slice('-2')
+// Summary
+/*Arrays
+- length shows how many elements in the array
+- Remove from end or start of array with pop, shift
+- Add to end or start of array with push, unshift
+- Use splice to add and remove from inside array
+- Reverse or sort with reverse, sort
+- join converts array to a string
+- Use indexOf or lastIndexOf to find an item`s index
+- Use slice to get subset of an array  */
