@@ -39,3 +39,5 @@ console.log(Object.prototype.toString.call([])) // create array inside object
 - propertyIsEnumerable method
 - toString method
   */
+
+// Getters and Setters
