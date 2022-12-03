@@ -241,3 +241,22 @@ let newObj = {
 Object.keys(newObj).forEach(function (item) {
   console.log(newObj[item]);
 });
+
+// Object.freeze(newObj);
+// if (!Object.isFrozen(newObj)) {
+//   newObj.prop2 = "oops";
+// }
+// Object.seal(newObj);
+// newObj.prop1 = "new value";
+// delete newObj.prop1;
+
+Object.preventExtensions(newObj);
+newObj.newProp = "new";
+
+// Summary
+/* Available properties and method of the Object constructor
+- prototype property is used for inheritance
+- keys method returns an arrays of an object`s property keys
+- freeze method prevents object being changed
+- seal and preventExtensions are less extreme
+- Use isFrozen isSealed, and isExtensible to check object states */
