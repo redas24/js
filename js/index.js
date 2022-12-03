@@ -1,11 +1,11 @@
-console.log("Welcome to JS")
+console.log("Welcome to JS");
 const myArray = [];
 
 myArray[0] = "Lucas";
 myArray[1] = 1001;
 myArray[2] = false;
 
-myArray.push('college')
+myArray.push("college");
 
 const newLength = myArray.unshift(44);
 
@@ -13,11 +13,10 @@ myArray.splice(1, 1, 42);
 myArray.pop = myArray;
 console.log(myArray);
 console.log(myArray.length);
-console.log(myArray[myArray.length - 1])
-
+console.log(myArray[myArray.length - 1]);
 
 // Slice method with arrays
-const myArray1 = ["A","B","C","D","E","F"]
+const myArray1 = ["A", "B", "C", "D", "E", "F"];
 
 const newString = myArray1.join();
 myArray1.reverse();
@@ -26,31 +25,29 @@ const newArray2 = myArray1.slice(2);
 
 console.log(newArray2);
 
-const myArrayA = ["A","B","C"]
-const myArrayB = ["D","E","F"];
+const myArrayA = ["A", "B", "C"];
+const myArrayB = ["D", "E", "F"];
 
-const newArray = myArrayA.concat(myArrayB)
+const newArray = myArrayA.concat(myArrayB);
 
 console.log(newArray);
 let mutt = newArray2;
 
 const person = {
-    name: ["Lucas","Cheps"],
-    age: 39,
-    bio: function() {
-        console.log('${this.name[0]} ${this.name[1]}');
-    }
-}
+  name: ["Lucas", "Cheps"],
+  age: 39,
+  bio: function () {
+    console.log("${this.name[0]} ${this.name[1]}");
+  },
+};
 
 console.log(person);
 
-
-document.getElementById("button").onclick = function() {
-    document.getElementById("confirm").innerHTML = "Order placed. Check email for confirmation ";
-    document.getElementById("button").style.display = "none";
-}
-
-
+document.getElementById("button").onclick = function () {
+  document.getElementById("confirm").innerHTML =
+    "Order placed. Check email for confirmation ";
+  document.getElementById("button").style.display = "none";
+};
 
 let foo = 42; // can reassign can build block scope
 foo = 78;
@@ -67,8 +64,7 @@ let string = "hey";
 
 console.log(string);
 
-
-let array = [5,'car', true];
+let array = [5, "car", true];
 let array2 = new Array();
 array[0];
 console.log(array);
@@ -88,7 +84,7 @@ let additionAssignment = 1;
 additionAssignment += 2;
 console.log(additionAssignment);
 
-let subtractionAssignment =1;
+let subtractionAssignment = 1;
 subtractionAssignment -= 2;
 // Arithmetic operators
 // Assignment operators(= += -= *=/=)
@@ -98,34 +94,31 @@ subtractionAssignment -= 2;
 // Advanced operators part2
 // Unary operators - operators with only single operand
 let test = {
-x: 'x'
-
+  x: "x",
 };
 
 console.log(test.x);
-console.log(true&&true);
+console.log(true && true);
 console.log(true || true);
-let obj = { x:'x', y:'y', z:'z'};
+let obj = { x: "x", y: "y", z: "z" };
 console.log(obj);
 // Exponentiation operator
 // Logical assignment operators
 
-(function(){
-
-    const num = 2**4
+(function () {
+  const num = 2 ** 4;
 })();
 console.log();
 //
 let a = null;
 let b = 1;
-console.log(a ??= b);
+console.log((a ??= b));
 // Operator Precedence
 // Operator associativity(left-to-right, or right-to-left)
 // parenthesis () -grouping operator have the presence in the other higher operators.
-let precedence = 1 + 4 *2;
-let precedence2 = (1 + 4)*2;
-let precedence3 =
-console.log(precedence);
+let precedence = 1 + 4 * 2;
+let precedence2 = (1 + 4) * 2;
+let precedence3 = console.log(precedence);
 console.log(precedence2);
 // Reserved words
 /* An identifier - the name given to:
@@ -145,8 +138,8 @@ myVariable != myvariable;
 // Numeric Separators
 /* Syntactic sugar for working with very large integers */
 (function () {
-    const largeNumber = 1000000000;
-    const largeNumber2 = 1_000_000_000;
+  const largeNumber = 1000000000;
+  const largeNumber2 = 1_000_000_000;
 })();
 /* Summary
     - Use separators to make large numbers more readable
@@ -163,88 +156,82 @@ myVariable != myvariable;
     const y = x || 10; // y =10
 })();*/
 
-
 /* ?. - The optional chaining operator is conceptually similar to the nullish coalescing operator */
 
 let obj1;
-obj.test // type error
-obj1?.test //undefined
+obj.test; // type error
+obj1?.test; //undefined
 console.log(obj);
 /* Function
   - A function is a named group of expressions
   - A function can be invoked at any time to execute the expressions it contains.
   */
 
-  (function(){
-    'use strict';
-    function function1(msg, msg2) {
-      console.log(msg);
-    }
-    function1('new message!');
-    function1('another message!')
+(function () {
+  "use strict";
+  function function1(msg, msg2) {
+    console.log(msg);
+  }
+  function1("new message!");
+  function1("another message!");
 
-    function logArgs() {
-      console.log(arguments);
+  function logArgs() {
+    console.log(arguments);
 
-      return 'some value';
-    }
-    logArgs('car','boat', 'arguments');
+    return "some value";
+  }
+  logArgs("car", "boat", "arguments");
 
-    let f = function f() {}
-    f();
+  let f = function f() {};
+  f();
 
-    function log(){
-      console.log(test);
-      var test = 'test';
-    }
-    log();
-  }());
+  function log() {
+    console.log(test);
+    var test = "test";
+  }
+  log();
+})();
 
-
-  // Arrays
+// Arrays
 /* An array is single object which can contain multiple values
 Arrays cn be created in multiple ways :
       -We can use the Array constructor
       -We can create array literals
 */
 
-
-  let myArray = new Array();
-  let myArray2 = ['a value','a second value'];
+let myArray = new Array();
+let myArray2 = ["a value", "a second value"];
 console.log(myArray2);
 console.log(myArray);
 
-
 // Objects
-(function() {
-
+(function () {
   let myObject = {
-    car1: 'sport',
-    car2: false
+    car1: "sport",
+    car2: false,
   };
 
   let obj = new Object();
 
   myObject.car2;
-  myObject['car2'];
+  myObject["car2"];
 
   myObject.car3 = true;
-  myObject['car4'] = 'engine';
-
+  myObject["car4"] = "engine";
 
   function getThingByColor(color) {
     let things = {
-    red:'red things',
-    green: 'green things',
-    yellow: 'yellow things'
-  };
-  return things[color] || 'Sorry no thing of that color exists!';
+      red: "red things",
+      green: "green things",
+      yellow: "yellow things",
+    };
+    return things[color] || "Sorry no thing of that color exists!";
   }
-  console.log(getThingByColor('yellow'));
-  console.log(getThingByColor('purple'));
+  console.log(getThingByColor("yellow"));
+  console.log(getThingByColor("purple"));
 
-  console.log(obj)
-}());
+  console.log(obj);
+})();
 
 // Sets
 /*Set:
@@ -272,9 +259,12 @@ console.log(mySet2.has(2));
   - Use set method to add new items
   - Use get method to retrieve items
 */
-let myMap = new Map;
-let myMap2 = new Map ([['a', 'b'],[1, 2]]);
-myMap2.set('c', 3);
+let myMap = new Map();
+let myMap2 = new Map([
+  ["a", "b"],
+  [1, 2],
+]);
+myMap2.set("c", 3);
 console.log(myMap2);
 
 // WeakSet and WeakMap
@@ -290,7 +280,6 @@ console.log(myWeakSet.has(someObj));
 myWeakSet.delete(someObj);
 console.log(myWeakSet.has(someObj));
 
-
 //The key in WeakMap must be object
 
 let myWeakMap = new WeakMap();
@@ -302,53 +291,50 @@ let myWeakMap = new WeakMap();
     - Cannot be iterated
   */
 
-
-
-    /*  Controlling program execution*/
+/*  Controlling program execution*/
 // Conditionals statement
 // An if statement can conditionally execute code based on the result of an expression
 
 if (2 + 2 === 4) {
-  console.log('conditions is true');
+  console.log("conditions is true");
 }
 
 if (true === false) {
-console.log('this will be not logged');
+  console.log("this will be not logged");
 } else {
-  console.log('this will be logged');
+  console.log("this will be logged");
 }
 
-
-let color = 'red';
-if  (color === 'blue') {
-  console.log('blue');
-} else if (color === 'green') {
-  console.log('green');
+let color = "red";
+if (color === "blue") {
+  console.log("blue");
+} else if (color === "green") {
+  console.log("green");
 } else {
   console.log(color);
 }
 
 if (1) {
-  console.log('truthy');
+  console.log("truthy");
 }
 
-let arr =['yes'];
+let arr = ["yes"];
 if (arr.length) {
-  console.log('array has length');
+  console.log("array has length");
 }
 
-let newArray = ['car','super-car','limousine'];
+let newArray = ["car", "super-car", "limousine"];
 console.log(newArray);
 
 let newCar = {
-  engine: '500horsepowers',
+  engine: "500horsepowers",
   doors: 5,
   wheels: 4,
   seatbelt: 5,
 };
 console.log(newCar);
 // Ternary operator take 3 operands
-(true) ? console.log('truthy') : console.log('falsy');
+true ? console.log("truthy") : console.log("falsy");
 
 /* Try Catch
 - Used to handle code that could potentially throw errors
@@ -358,10 +344,9 @@ console.log(newCar);
  */
 
 try {
-    // something that may result in an error
-
+  // something that may result in an error
 } catch (error) {
-  console.log('an error occurred:', error);
+  console.log("an error occurred:", error);
 }
 // Switch statements
 /* Switch:
@@ -371,20 +356,20 @@ try {
 - Switch can be used with other types
   */
 
-let switcher = 'five';
+let switcher = "five";
 
 switch (switcher) {
-  case 'one':
-    console.log('the value was one');
+  case "one":
+    console.log("the value was one");
     break;
-  case 'two':
-    console.log('the value was two');
+  case "two":
+    console.log("the value was two");
     break;
-    case 'three':
-      console.log('the value was three');
-      break;
-      default:
-        console.log('nothing else matched');
+  case "three":
+    console.log("the value was three");
+    break;
+  default:
+    console.log("nothing else matched");
 }
 /* Summary Switch:
 - Similar to if else
@@ -398,7 +383,7 @@ switch (switcher) {
 - regular loop is used for iterate values in array.
 */
 
-let anArray1 = ['one','two', 'three'];
+let anArray1 = ["one", "two", "three"];
 
 for (const element of anArray1) {
   console.log(element);
@@ -411,14 +396,14 @@ for (const element of anArray1) {
 - Use hasOwnProperty to only iterate own properties*/
 
 let obj = {
-  key1: 'value1',
-  key2: 'value2',
-  key3: 'value3',
+  key1: "value1",
+  key2: "value2",
+  key3: "value3",
 };
 
 for (let prop in obj) {
   if (obj.hasOwnProperty(prop))
-  console.log('key is:',prop, 'value is:', obj[prop]);
+    console.log("key is:", prop, "value is:", obj[prop]);
 }
 // Iterators & Iterables
 /* The for of loop can be used with any iterable
@@ -433,8 +418,7 @@ for (let prop in obj) {
                 done - true when there are no more values
 */
 
-
-let mySet1 = new Set(['a', 'b', 'c']);
+let mySet1 = new Set(["a", "b", "c"]);
 let setEntries = mySet1.entries();
 console.log(setEntries.next());
 console.log(setEntries.next());
@@ -450,19 +434,17 @@ console.log(setEntries.next());
 /*while loops continue to execute while a condition remains true
 - constructor: while(condition) {} */
 
-
-
 let count = 0;
 
 while (count < 5) {
   if (count === 3) break;
-  console.log(count += 1);
+  console.log((count += 1));
 }
 
 let condition = true;
 
 do {
-  console.log('execute once');
+  console.log("execute once");
   condition = false;
 } while (condition);
 
@@ -473,3 +455,266 @@ do {
 - Statements in a while loop may never be executed
 - Use break to exit the loop early
  */
+
+// Working with strings
+/*Strings can be created in different ways:
+- 'As literal strings'- preferred
+- As object returned from the constructor
+- JavaScript performs type coercion under the hood when calling methods on primitives
+*/
+
+let testRing = "This is a test ring";
+console.log(testRing.length);
+
+let ringArr = testRing.split(" ");
+console.log(ringArr);
+console.log(testRing.indexOf("is"));
+console.log(testRing.lastIndexOf("is"));
+console.log(testRing.toUpperCase());
+console.log(testRing.substring(8, 9));
+console.log(testRing.slice(-2));
+console.log("  test   ".trim());
+
+/* Summary Strings:
+- Use length property to get length of string
+- Use split to turn into an array
+- Use indexOf or lastIndexOf to find position od characters in a string
+- Use toUpperCase or to LowerCase methods for all caps/no caps
+- Use subStr or slice to select parts of a string
+- Use trim to remove white-space characters
+*/
+const number = [2, 6, 3, 7, 8, 4, 0, 9];
+number.sort();
+console.log(number);
+const array1 = [1, 2, 3];
+console.log(array1.includes(2));
+
+const words = [
+  "spray",
+  "limit",
+  "elite",
+  "exuberant",
+  "destruction",
+  "present",
+];
+
+const result = words.filter((word) => word.length > 6);
+console.log(result);
+
+const array2 = [5, 12, 8, 130, 44];
+const found = array2.find((element) => element > 10);
+console.log(found);
+
+// Working with strings part2
+console.log("------test------".trimStart());
+console.log("------test------".trimEnd());
+console.log("test".padStart(7));
+console.log("test".padStart(7, "$"));
+// Template Literals
+let template = "this is template literal";
+let a = "5",
+  b = "something";
+console.log("a is ${a} while b is ${b} else");
+
+function reverse(string) {
+  return string.split("").reverse().join("");
+}
+
+function buildStr(strings, ...value) {
+  return (
+    strings[3] +
+    value[2] +
+    strings[2] +
+    value[1] +
+    strings[1] +
+    value[0] +
+    strings[0]
+  );
+}
+console.log(buildStr);
+
+/*Summary
+Template Literals
+- Use backticks to define
+- Just like strings but with extra powers
+- Multiline
+- Token substitution
+- Tag with a function fo full substitution control
+*/
+// Working with numbers
+//  Numbers are primitives
+/*Numbers have properties related to special values in JavaScript
+- MAX_VALUE
+- MIN_VALUE
+- MAX_SAFE_INTEGER
+- MIN_SAFE_INTEGER
+ */
+console.log(Number.isNaN(5 + "oops"));
+let floatString = "1.5";
+let intString = "3";
+console.log(typeof Number.parseFloat(floatString));
+console.log(typeof Number.parseInt(intString));
+let num = 4.6789432;
+console.log(num.toFixed(2));
+console.log(num.toExponential(2));
+console.log(num.toLocaleString(2));
+console.log(num.toPrecision(2));
+console.log(num.toString(2));
+// Working with BIGInt
+// JAvaScript has a maximum safe value for integers 2*53-1
+
+Number.MAX_SAFE_INTEGER + 1 === Number.MIN_SAFE_INTEGER + 2;
+
+// Working with Arrays
+
+let arr = ["one", "two", "three"];
+arr.length;
+console.log(arr.slice());
+arr.push("four");
+console.log(arr);
+
+arr.unshift("zero");
+console.log(arr);
+arr.pop();
+arr.shift();
+arr.splice(0, 1);
+console.log(arr);
+arr.reverse("a", "b", "c");
+arr.sort();
+console.log(arr);
+console.log(
+  ["a", "b", "C"].sort(function (a, b) {
+    let caselessA = a.toLowerCase(),
+      caselessB = b.toLowerCase();
+    if (caselessA < caselessB) {
+      return -1;
+    } else if (caselessA === caselessB) {
+      return 0;
+    } else {
+      return 1;
+    }
+  })
+);
+console.log(
+  [3, 10000, 20].sort(function (a, b) {
+    return a - b;
+  })
+);
+
+arr.join("x");
+console.log(arr);
+arr.indexOf("b");
+arr.lastIndexOf("a");
+arr.slice(1);
+arr.slice("-2");
+// Summary
+/*Arrays
+- length shows how many elements in the array
+- Remove from end or start of array with pop, shift
+- Add to end or start of array with push, unshift
+- Use splice to add and remove from inside array
+- Reverse or sort with reverse, sort
+- join converts array to a string
+- Use indexOf or lastIndexOf to find an item`s index
+- Use slice to get subset of an array  */
+
+// Working with arrays part 2
+// Arrays contain numerous methods to iterate their elements in different ways.
+let array = ["x", "y", "z"];
+array.forEach(function (currentItem) {
+  console.log(currentItem);
+});
+array.some(function (currentItem) {
+  console.log("Iterating...");
+  return currentItem === "y";
+});
+array.every(function (currentItem) {
+  console.log("Also Iterating...");
+  return currentItem !== "x";
+});
+let arr1 = [1, 2, 3, 4, 5];
+let sum = arr1.reduce(function (previous, current) {
+  return previous + current;
+}, 0);
+console.log(sum);
+let refs = {
+  a: "alpha",
+  b: "beta",
+  g: "gamma",
+};
+let arr2 = ["a", "b", "g"];
+let result2 = arr2.map(function (currentItem) {
+  return refs[currentItem];
+});
+console.log(result2);
+// Summary
+/*
+Iterating arrays
+- forEach -visit each array item
+- some - iterate until callback returns true
+- every - iterate until callback returns false
+- reduce - reduce array to a single value
+- map - map an array into another array
+ */
+// Working with arrays part 3
+// includes() - does the array contain the value?
+const fruits = ["Apples", "Oranges", "Bananas"];
+console.log(fruits.includes("Apples"));
+console.log(fruits.includes("Apples", 1));
+// flat() -flatten a multidimensional array to a single dimension
+
+const multiArray = ["Apples", "Oranges", ["Raspberries", "Blueberries"]];
+console.log(multiArray.flat());
+multiArray.concat(multiArray.join("bananas"));
+console.log(multiArray);
+
+const multiArray2 = ["Apples", "Oranges", ["Lemons", "Limes"]];
+console.log(multiArray2.flat(2));
+// Summary
+/*includes - does the array include the specified value
+flat - unwrap multidimensional arrays on n depth
+ */
+
+// Working with object type
+// The prototype property
+// All objects are descendants of Object
+// Other objects inherit properties from Object via the prototype
+// The prototype is a "live" object - changes to it are seen everywhere
+
+//let newObj = {};
+//Object.prototype.mySpecialProperty = "special!";
+//console.log(newObj.mySpecialProperty);
+
+//let myArr = ["first", "second", "third"];
+//if (!Array.prototype.head) {
+//  Array.prototype.head = function () {
+//    return this[0];
+//  };
+//  console.log(myArr.head());
+//}
+
+let newObj = {
+  prop1: "prop1",
+};
+Object.keys(newObj).forEach(function (item) {
+  console.log(newObj[item]);
+});
+
+// Object.freeze(newObj);
+// if (!Object.isFrozen(newObj)) {
+//   newObj.prop2 = "oops";
+// }
+// Object.seal(newObj);
+// newObj.prop1 = "new value";
+// delete newObj.prop1;
+
+Object.preventExtensions(newObj);
+newObj.newProp = "new";
+
+// Summary
+/* Available properties and method of the Object constructor
+- prototype property is used for inheritance
+- keys method returns an arrays of an object`s property keys
+- freeze method prevents object being changed
+- seal and preventExtensions are less extreme
+- Use isFrozen isSealed, and isExtensible to check object states */
