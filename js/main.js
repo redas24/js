@@ -7,3 +7,4 @@ let obj = {
   x: x,
   y: y,
 };
+console.log(obj, obj);
