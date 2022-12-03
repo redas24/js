@@ -22,3 +22,6 @@ console.log(composedObj);
  */
 
 // Working with the OBjects Instances
+
+let myObj = {};
+console.log(myObj.constructor);
