@@ -1,10 +1,12 @@
 // Objects Literals Extensions
-
 let x = "test",
   y = 42;
 
 let obj = {
-  x: x,
-  y: y,
+  x,
+  y,
+  method: function () {
+    return "method";
+  },
 };
-console.log(obj, obj);
+console.log(obj);
