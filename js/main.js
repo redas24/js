@@ -42,3 +42,13 @@ console.log(Object.prototype.toString.call([])) // create array inside object
 - join converts array to a string
 - Use indexOf or lastIndexOf to find an item`s index
 - Use slice to get subset of an array  */
+setTimeout(function () {
+  console.log("Print this after 2 seconds")
+}, 2000)
+function X(Y) {
+  console.log("I am X")
+  Y()
+}
+X(function Y() {
+  console.log("I am Y")
+})
