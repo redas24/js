@@ -52,3 +52,13 @@ function X(Y) {
 X(function Y() {
   console.log("I am Y")
 })
+
+const myObj1 = {
+  x: "x",
+  y: "y",
+}
+console.log(Object.values(myObj1))
+
+const myObj2 = {}
+console.log(Object.values(myObj2))
+console.log(Object.entries(myObj2))
