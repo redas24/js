@@ -4,6 +4,7 @@ let myObj = {
   otherProp: "other",
 
   get prop() {
-    console.log("accessing")
+    console.log("accessing prop")
+    return this.otherProp
   },
 }
