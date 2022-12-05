@@ -1,6 +1,6 @@
 //  Getters and Setters
 // Special methods that are invoked automatically when a property is accessed or assigned to.
-let myObj = {
+let myObj(4) = {
   otherProp: "other",
 
   get prop() {
@@ -8,3 +8,4 @@ let myObj = {
     return this.otherProp
   },
 }
+console.log(MyObj)
