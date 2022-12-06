@@ -787,3 +787,62 @@ console.log(Object.getOwnPropertyDescriptors(myObj1))
  - getOWnPropertyDescriptor(obj, key) - returns the property descriptor for a single property
  - getOwnPropertyDescriptors(obj) - returns the property descriptors for all own properties
  */
+
+
+ //  Getters and Setters
+// Special methods that are invoked automatically when a property is accessed or assigned to.
+let myObj = {
+  otherProp: "other",
+
+  get prop() {
+    console.log("accessing prop")
+    return this.otherProp
+  },
+  set prop(val) {
+    console.log('setting other prop to ${val}')
+    this.otherProp = val
+
+  }
+}
+console.log(myObj.prop)
+myObj.prop = 'new'
+console.log(myObj)
+// Summary
+/*Getters and Setters
+- Special properties that invoke methods when accessed or assigned
+- this points to the object they are within */
+
+// Custom types Object
+
+let Person = function(name) {
+  this.name = name
+
+}
+Person.prototype = {
+  greet() {
+    return `Hi, my name is ${this.name}`
+  }
+}
+let alex = new Person('alex')
+console.log(alex.greet())
+
+let kristo = Object.create(Person.prototype, {
+name: { writable: true, value: 'kristo'}
+})
+Object.defineProperty(kristo,'job',{
+  value: 'Developer',
+  writable: false,
+  configurable: true,
+  enumerable: true
+})
+Object.defineProperties(kristo, {
+  heightInCm: {value: 185},
+  weightInKg: {value: 85},
+})
+console.log(kristo.greet())
+console.log(kristo)
+// Summary
+/* - How to create custom object
+   - defineProperty method
+   - Property descriptor objects
+    defineProperty method */
