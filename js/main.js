@@ -23,17 +23,16 @@ console.log(myObj)
 
 // Custom types Object
 
-class Person {
-  constructor (name) {
-    this.name = name
-  }
+let Person = function(name) {
+  this.name = name
+
+}
+Person.prototype = {
   greet() {
     return `Hi, my name is ${this.name}`
   }
 }
-
-
 let alex = new Person('alex')
-console.log('alex')
-
-
+console.log(alex.greet())
+let john = Object.create(Person.prototype)
+console.log(john.greet())
