@@ -35,4 +35,5 @@ Person.prototype = {
 let alex = new Person('alex')
 console.log(alex.greet())
 let john = Object.create(Person.prototype)
+name: { writable: true, value: 'john'}
 console.log(john.greet())
