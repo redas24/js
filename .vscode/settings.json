@@ -33,4 +33,5 @@
 "workbench.panel.defaultLocation": "right",
 "workbench.settings.editor": "json",
 "workbench.sideBar.location": "right",
+"sonarlint.pathToCompileCommands": "/home/yourname/repos/proj/compile_commands.json"
 }
