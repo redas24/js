@@ -5,4 +5,6 @@
 */
 
 let now = new Date();
-console.log(now);
+console.log( now);
+let partyTime = new Date (946583788000);
+console.log(partyTime);
