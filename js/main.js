@@ -30,3 +30,30 @@ console.log(this);
 - undefined inside a function
 - The containing object in a method
 - Instance when inside a constructor function */
+
+
+
+// Working with Functions
+/*They contain useful properties and methods fo us to use
+ */
+
+(function(){
+  'use strict'
+
+function testFunction(arg1, arg2) {
+  return arg1 + arg2;
+}
+console.log(testFunction.length)
+
+let person = {
+  name: 'lucas',
+  job: 'developer'
+}
+
+function introduce(inductee) {
+  console.log(`Hey ${inductee} my name is ${this.name}, and I'm a ${this.job}`)
+}
+
+introduce.call(person, 'alex' );
+introduce.apply(person, ['craig']);
+}());
