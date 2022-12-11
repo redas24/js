@@ -56,4 +56,16 @@ function introduce(inductee) {
 
 introduce.call(person, 'alex' );
 introduce.apply(person, ['craig']);
+
+function addToCart(price, fee){
+  if(!this.total) {
+this.total = 0;
+  }
+  this.total += price +=fee;
+  return `${this.name}s cart total is ${this.total}`
+}
+let dansCart = addToCart.bind(person, 1)
+console.log(dansCart(50))
+console.log(dansCart(100))
 }());
+// c for call a for apply how tu use call and apply method
