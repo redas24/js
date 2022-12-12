@@ -9,4 +9,7 @@
     console.log(myVar, localVar);
   }
   local();
-})();
+})()
+let newArr = [1,2,34,5];
+console.log(newArr);
+
