@@ -15,3 +15,5 @@ console.log(newArr);
 
 const Obj = new Obj();
 console.log(Obj);
+const Obj1 = any;
+console.log(any);
