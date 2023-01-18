@@ -6,6 +6,7 @@
     "build": "webpack"
 },
 "hosting": {
+    "site": "portfolio2024-ebc6f",
     "public": "deploy",
     "ignore": [
       "firebase.json",

@@ -195,7 +195,7 @@ Arrays cn be created in multiple ways :
       -We can create array literals
 */
 
-let myArray = new Array();
+let myArray4 = new myArray4();
 let myArray2 = ["a value", "a second value"];
 console.log(myArray2);
 console.log(myArray);
