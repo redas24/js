@@ -18,6 +18,3 @@ self.scope = newArr;
 setTimeout(function () {
   alert("Welcome to my journey into Devops");
 }, 5000);
-const domContainer = document.querySelector("#like_button_container");
-const root = ReactDOM.createRoot(domContainer);
-root.render(e(LikeButton));
