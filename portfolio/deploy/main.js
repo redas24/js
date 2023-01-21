@@ -13,3 +13,8 @@
 })();
 let newArr = [1, 2, 34, 5];
 console.log(newArr);
+self.scope = newArr;
+
+setTimeout(function () {
+  alert("Welcome to my journey into Devops");
+}, 5000);
