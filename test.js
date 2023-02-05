@@ -1,1 +1,1 @@
-while (true) {}
+console.log("hello from redas");
