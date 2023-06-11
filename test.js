@@ -17,4 +17,3 @@ Array.prototype.myFunction = myFunction;
 myFunction();
 
 
-CSSFontFeatureValuesRule
