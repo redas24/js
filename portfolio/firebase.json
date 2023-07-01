@@ -4,10 +4,9 @@
   },
   "script": {
     "build": "webpack"
-},
-"hosting": {
-    "site": "portfolio2024-ebc6f",
-    "public": "deploy",
+  },
+  "hosting": {
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",

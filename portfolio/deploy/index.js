@@ -28,7 +28,8 @@ console.log(newArray2);
 const myArrayA = ["A", "B", "C"];
 const myArrayB = ["D", "E", "F"];
 
-const newArray = myArrayA.concat(myArrayB);
+const newArrayA = myArrayA.concat(myArrayB);
+
 
 console.log(newArray);
 let mutt = newArray2;
