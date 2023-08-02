@@ -18,6 +18,7 @@ console.log(myArray[myArray.length - 1]);
 // Slice method with arrays
 const myArray1 = ["A", "B", "C", "D", "E", "F"];
 
+TouchEvent 
 const newString = myArray1.join();
 myArray1.reverse();
 
