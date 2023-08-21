@@ -1,19 +1,9 @@
-let newArray = [];
-let newArray2 = [];
-let newArray3 = [];
-let newArray4 = [];
 
-function myFunction() {
-    if (newArray.length < 10) {
-        newArray.push("Lucas");
-        console.log(newArray);
-    } else if (newArray.length == 10) {
-        newArray2.push("Lucas");
-        console.log(newArray2);
+<script>
+    r.oninput = c;
+    function c() {
+        t.value = this.value;
     }
-
-}
-Array.prototype.myFunction = myFunction;
-myFunction();
+</script>
 
 
