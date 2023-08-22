@@ -1,1 +1,0 @@
-{"mappings":"AAAA;AAEA,IAAI,MAAM;AACV,MAAM;AACN,QAAQ,GAAG,CAAC","sources":["js/main.js"],"sourcesContent":["'use strict';\n\nlet foo = 42;\nfoo = 78;\nconsole.log(foo);"],"names":[],"version":3,"file":"index.72be8890.js.map","sourceRoot":"/__parcel_source_root/"}
