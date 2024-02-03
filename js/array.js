@@ -1,5 +1,3 @@
-const myArray = [];
-
 myArray[0] = "Lucas";
 myArray[1] = 1001;
 myArray[2] = false;
